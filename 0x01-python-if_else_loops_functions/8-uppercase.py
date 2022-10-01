@@ -3,9 +3,6 @@ def uppercase(st):
     string = st
     for c in string:
         asc = ord(c)
-        if asc >= 97 and asc <= 122:
-            asc -= 32
-            print("{:c}".format(asc), end="")
-        else:
-            print("{:c}".format(asc), end="")
+        case = asc - 32 if asc >= 97 and asc <= 122 else asc
+        print("{:c}".format(case), end="")
     print("")
