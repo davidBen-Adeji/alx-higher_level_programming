@@ -15,13 +15,13 @@ b = int(argv[3])
 op = argv[2]
 
 if op == "+":
-    print("{:d} {} {:d} = {:d}".format(a, op, b, a + b))
+    print("{:d} {} {:d} = {:d}".format(a, op, b, add(a, b)))
 elif op == "-":
-    print("{:d} {} {:d} = {:d}".format(a, op, b, a - b))
+    print("{:d} {} {:d} = {:d}".format(a, op, b, sub(a, b)))
 elif op == "*":
-    print("{:d} {} {:d} = {:d}".format(a, op, b, a * b))
+    print("{:d} {} {:d} = {:d}".format(a, op, b, mul(a, b)))
 elif op == "/":
-    print("{:d} {} {:d} = {:d}".format(a, op, b, a / b))
+    print("{:d} {} {:d} = {:d}".format(a, op, b, div(a, b)))
 else:
     print("Unknown operator. Available operators: +, -, * and /")
     exit(1)
