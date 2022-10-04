@@ -7,7 +7,7 @@ def print_matrix_integer(matrix=[[]]):
     for i in range(length):
         length_1 = len(matrix[i])
         if length_1 == 0:
-            print(" ")
+            print("")
             continue
 
         for j in range(length_1):
